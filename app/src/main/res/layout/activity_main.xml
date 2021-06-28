@@ -10,24 +10,34 @@
         android:id="@+id/result_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Num"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459" />
+        app:layout_constraintVertical_bias="0.552" />
 
     <Button
         android:id="@+id/roll_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="287dp"
+        android:layout_marginTop="16dp"
         android:text="Roll"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/result_txt"
-        app:layout_constraintStart_toStartOf="@+id/result_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_txt" />
+
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/dice_1"
+        app:layout_constraintBottom_toTopOf="@+id/roll_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
